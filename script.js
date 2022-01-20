@@ -41,6 +41,12 @@ const methodMahasiswa = {
     main: function (jam) {
         this.energi -= jam;
         console.log(`Hallo ${this.nama}, selamat bermain! Energimu sekarang tinggal ${this.energi}.`);
+    },
+
+    // method tidur
+    tidur: function (jam) {
+        this.energi -= jam * 2;
+        console.log(`Hallo ${this.nama}, selamat tidur! Energimu sekarang tinggal ${this.energi}.`);
     }
 };
 
@@ -55,6 +61,7 @@ function Mahasiswa(nama, energi) {
     mahasiswa.energi = energi;
     mahasiswa.makan = methodMahasiswa.makan;
     mahasiswa.main = methodMahasiswa.main;
+    mahasiswa.tidur = methodMahasiswa.tidur;
 
     return mahasiswa;
 }
