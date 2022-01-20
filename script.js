@@ -45,7 +45,7 @@ const methodMahasiswa = {
 
     // method tidur
     tidur: function (jam) {
-        this.energi -= jam * 2;
+        this.energi += jam * 2;
         console.log(`Hallo ${this.nama}, selamat tidur! Energimu sekarang tinggal ${this.energi}.`);
     }
 };
@@ -56,12 +56,10 @@ const methodMahasiswa = {
 // Ini kita membuat Blue Print nya
 function Mahasiswa(nama, energi) {
     // Awalnya sama yaitu dengan membuat object KOSONGAN
-    let mahasiswa = {};
+    // Menambahkan Object.create(objectYangInginDiWariskan)
+    let mahasiswa = Object.create(methodMahasiswa);
     mahasiswa.nama = nama;
     mahasiswa.energi = energi;
-    mahasiswa.makan = methodMahasiswa.makan;
-    mahasiswa.main = methodMahasiswa.main;
-    mahasiswa.tidur = methodMahasiswa.tidur;
 
     return mahasiswa;
 }
