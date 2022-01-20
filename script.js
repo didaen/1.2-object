@@ -63,8 +63,8 @@ function Mahasiswa(nama, energi) {
 // Inisiasi object menggunakan function declaration akan memakan banyak memori apabila method didekalarikan di dalam function
 // Untuk menghemat memory object harus di deklarasikan pada Object Literal lain di luar Function Declaration
 // Dan di dalam Function declaration diberi Object.create(Namaobjectliteral) untuk tracking apabila ada method baru yang ditambahkan
-// let dida = Mahasiswa("Dida", 10);
-// let edvin = Mahasiswa('Edvin', 50);
+let dida = Mahasiswa("Dida", 10);
+let edvin = Mahasiswa('Edvin', 50);
 
 
 
@@ -100,7 +100,7 @@ function Mahasiswa(nama, energi) {
 // Namun untuk Constructor Function ini perlu menambahkan keyword di depan
 // Apabila tanpa keyword new, maka dia akan mencari functon declaration yang memiliki array kosong dan return
 
-let dida = new Mahasiswa('Dida', 20);
+// let dida = new Mahasiswa('Dida', 20);
 
 
 
