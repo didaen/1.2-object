@@ -54,6 +54,9 @@ function Mahasiswa(nama, energi) {
 }
 
 // // INISIASI OBJECT
+// Inisiasi object menggunakan function declaration akan memakan banyak memori apabila method didekalarikan di dalam function
+// Untuk menghemat memory object harus di deklarasikan pada Object Literal lain di luar Function Declaration
+// Dan di dalam Function declaration diberi Object.create(Namaobjectliteral) untuk tracking apabila ada method baru yang ditambahkan
 // let dida = Mahasiswa("Dida", 10);
 // let edvin = Mahasiswa('Edvin', 50);
 
